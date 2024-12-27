@@ -44,8 +44,8 @@ func main() {
 	logrus.Info("App mode is ", appMode)
 	logrus.Info("Check every 60s...")
 
-	tehLoc, _ := time.LoadLocation("Asia/Tehran")
-	time.Local = tehLoc
+	// tehLoc, _ := time.LoadLocation("Asia/Tehran")
+	// time.Local = tehLoc
 
 	s, err := gocron.NewScheduler()
 	if err != nil {
